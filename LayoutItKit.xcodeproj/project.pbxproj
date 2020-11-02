@@ -22,6 +22,7 @@
 		78FE606F254F91AD00291CC2 /* UIView+AnchoredConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE606E254F91AD00291CC2 /* UIView+AnchoredConstraints.swift */; };
 		78FE6073254F91B700291CC2 /* UIView+CenterConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE6072254F91B700291CC2 /* UIView+CenterConstraints.swift */; };
 		78FE6077254F91C100291CC2 /* UIView+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE6076254F91C100291CC2 /* UIView+Stack.swift */; };
+		78FE608C25506E3A00291CC2 /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE608B25506E3A00291CC2 /* UILabelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		78FE606E254F91AD00291CC2 /* UIView+AnchoredConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnchoredConstraints.swift"; sourceTree = "<group>"; };
 		78FE6072254F91B700291CC2 /* UIView+CenterConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CenterConstraints.swift"; sourceTree = "<group>"; };
 		78FE6076254F91C100291CC2 /* UIView+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Stack.swift"; sourceTree = "<group>"; };
+		78FE608B25506E3A00291CC2 /* UILabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		3D9C42A32274595F000A6585 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				78FE608825506DC000291CC2 /* Extensions */,
 				3D9C42EC22745FDA000A6585 /* LinuxMain.swift */,
 				3D9C42D722745CDE000A6585 /* LayoutItKitTests.swift */,
 			);
@@ -209,6 +212,14 @@
 				78FE606E254F91AD00291CC2 /* UIView+AnchoredConstraints.swift */,
 				78FE6072254F91B700291CC2 /* UIView+CenterConstraints.swift */,
 				78FE6076254F91C100291CC2 /* UIView+Stack.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		78FE608825506DC000291CC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				78FE608B25506E3A00291CC2 /* UILabelTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -390,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78FE608C25506E3A00291CC2 /* UILabelTests.swift in Sources */,
 				3D9C42FC22746078000A6585 /* LayoutItKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

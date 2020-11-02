@@ -1,0 +1,7 @@
+# LayoutItKit document generator jazzy settings
+
+copyright: Copyright 2020 LayoutItKit
+author: Abraão Levi
+xcodebuild_arguments: [-target, LayoutItKit-iOS]
+clean: true
+output: ./Documentation

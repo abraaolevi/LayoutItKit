@@ -1,14 +1,11 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
     name: "LayoutItKit",
     platforms: [
-        .iOS(.v8),
-        .tvOS(.v9),
-        .watchOS(.v2),
-        .macOS(.v10_10)
+        .iOS(.v11)
     ],
     products: [
         .library(

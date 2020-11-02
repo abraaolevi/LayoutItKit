@@ -52,7 +52,7 @@ pod 'LayoutItKit'
 To integrate LayoutItKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "AbraãoLevi/LayoutItKit"
+github "abraaolevi/LayoutItKit"
 ```
 
 Run `carthage update` to build the framework and drag the built `LayoutItKit.framework` into your Xcode project. 
@@ -65,7 +65,7 @@ To integrate using Apple's [Swift Package Manager](https://swift.org/package-man
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AbraãoLevi/LayoutItKit.git", from: "1.0.0")
+    .package(url: "https://github.com/abraaolevi/LayoutItKit.git", from: "1.0.0")
 ]
 ```
 

@@ -15,6 +15,8 @@ class LayoutItKitTests: XCTestCase {
         ("testExample", testExample),
     ]
     
-    func testExample() {}
+    func testExample() {
+        XCTAssert(true)
+    }
     
 }

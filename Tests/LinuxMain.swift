@@ -4,4 +4,5 @@ import XCTest
 XCTMain([
     testCase(LayoutItKitTests.allTests),
     testCase(UILabelTests.allTests),
+    testCase(UIStackViewTests.allTests),
 ])

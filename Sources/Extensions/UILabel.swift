@@ -22,26 +22,31 @@ extension UILabel {
         self.numberOfLines = numberOfLines
     }
     
+    @discardableResult
     open func withText(_ text: String) -> Self {
         self.text = text
         return self
     }
     
+    @discardableResult
     open func withFont(_ font: UIFont) -> Self {
         self.font = font
         return self
     }
     
+    @discardableResult
     open func withTextColor(_ color: UIColor) -> Self {
         self.textColor = color
         return self
     }
     
+    @discardableResult
     open func withTextAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
         return self
     }
     
+    @discardableResult
     open func withNumberOfLines(_ numberOfLines: Int) -> Self {
         self.numberOfLines = numberOfLines
         return self

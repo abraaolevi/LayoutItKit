@@ -26,6 +26,9 @@
 		78FE60902551F3FD00291CC2 /* UIStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE608F2551F3FD00291CC2 /* UIStackViewTests.swift */; };
 		8E0D5B9425560D71002BB9C7 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5B9325560D71002BB9C7 /* Configure.swift */; };
 		8E0D5B9925560DE7002BB9C7 /* ConfigureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5B9825560DE7002BB9C7 /* ConfigureTests.swift */; };
+		8E0D5B9F255612B2002BB9C7 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */; };
+		8E0D5BA325561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */; };
+		8E0D5BA72556E533002BB9C7 /* UIView+CenterConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,9 @@
 		78FE608F2551F3FD00291CC2 /* UIStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewTests.swift; sourceTree = "<group>"; };
 		8E0D5B9325560D71002BB9C7 /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
 		8E0D5B9825560DE7002BB9C7 /* ConfigureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureTests.swift; sourceTree = "<group>"; };
+		8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
+		8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnchoredConstraintsTests.swift"; sourceTree = "<group>"; };
+		8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CenterConstraintsTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +235,9 @@
 			children = (
 				78FE608B25506E3A00291CC2 /* UILabelTests.swift */,
 				78FE608F2551F3FD00291CC2 /* UIStackViewTests.swift */,
+				8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */,
+				8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */,
+				8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -427,9 +436,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0D5B9F255612B2002BB9C7 /* UIViewTests.swift in Sources */,
 				8E0D5B9925560DE7002BB9C7 /* ConfigureTests.swift in Sources */,
 				78FE608C25506E3A00291CC2 /* UILabelTests.swift in Sources */,
+				8E0D5BA325561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift in Sources */,
 				3D9C42FC22746078000A6585 /* LayoutItKitTests.swift in Sources */,
+				8E0D5BA72556E533002BB9C7 /* UIView+CenterConstraintsTests.swift in Sources */,
 				78FE60902551F3FD00291CC2 /* UIStackViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

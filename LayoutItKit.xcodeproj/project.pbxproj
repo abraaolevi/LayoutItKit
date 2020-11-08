@@ -24,6 +24,12 @@
 		78FE6077254F91C100291CC2 /* UIView+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE6076254F91C100291CC2 /* UIView+Stack.swift */; };
 		78FE608C25506E3A00291CC2 /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE608B25506E3A00291CC2 /* UILabelTests.swift */; };
 		78FE60902551F3FD00291CC2 /* UIStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE608F2551F3FD00291CC2 /* UIStackViewTests.swift */; };
+		8E0D5B9425560D71002BB9C7 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5B9325560D71002BB9C7 /* Configure.swift */; };
+		8E0D5B9925560DE7002BB9C7 /* ConfigureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5B9825560DE7002BB9C7 /* ConfigureTests.swift */; };
+		8E0D5B9F255612B2002BB9C7 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */; };
+		8E0D5BA325561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */; };
+		8E0D5BA72556E533002BB9C7 /* UIView+CenterConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */; };
+		8E0D5BAB2558751E002BB9C7 /* UIView+StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5BAA2558751E002BB9C7 /* UIView+StackTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		78FE6076254F91C100291CC2 /* UIView+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Stack.swift"; sourceTree = "<group>"; };
 		78FE608B25506E3A00291CC2 /* UILabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTests.swift; sourceTree = "<group>"; };
 		78FE608F2551F3FD00291CC2 /* UIStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewTests.swift; sourceTree = "<group>"; };
+		8E0D5B9325560D71002BB9C7 /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
+		8E0D5B9825560DE7002BB9C7 /* ConfigureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureTests.swift; sourceTree = "<group>"; };
+		8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
+		8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnchoredConstraintsTests.swift"; sourceTree = "<group>"; };
+		8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CenterConstraintsTests.swift"; sourceTree = "<group>"; };
+		8E0D5BAA2558751E002BB9C7 /* UIView+StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+StackTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				78FE605F254F8F0900291CC2 /* Extensions */,
+				8E0D5B9225560D31002BB9C7 /* Utilities */,
 				3D9C42A122745900000A6585 /* LayoutItKit.swift */,
 			);
 			path = Sources;
@@ -178,6 +191,7 @@
 		3D9C42A32274595F000A6585 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8E0D5B9725560DB9002BB9C7 /* Utilities */,
 				78FE608825506DC000291CC2 /* Extensions */,
 				3D9C42EC22745FDA000A6585 /* LinuxMain.swift */,
 				3D9C42D722745CDE000A6585 /* LayoutItKitTests.swift */,
@@ -223,8 +237,28 @@
 			children = (
 				78FE608B25506E3A00291CC2 /* UILabelTests.swift */,
 				78FE608F2551F3FD00291CC2 /* UIStackViewTests.swift */,
+				8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */,
+				8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */,
+				8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */,
+				8E0D5BAA2558751E002BB9C7 /* UIView+StackTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E0D5B9225560D31002BB9C7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8E0D5B9325560D71002BB9C7 /* Configure.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8E0D5B9725560DB9002BB9C7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8E0D5B9825560DE7002BB9C7 /* ConfigureTests.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +428,7 @@
 				78FE606B254F910400291CC2 /* UIView.swift in Sources */,
 				78FE6077254F91C100291CC2 /* UIView+Stack.swift in Sources */,
 				78FE6061254F8FBB00291CC2 /* UILabel.swift in Sources */,
+				8E0D5B9425560D71002BB9C7 /* Configure.swift in Sources */,
 				78FE606F254F91AD00291CC2 /* UIView+AnchoredConstraints.swift in Sources */,
 				78FE6067254F8FDC00291CC2 /* UIStackView.swift in Sources */,
 				3D9C42A222745900000A6585 /* LayoutItKit.swift in Sources */,
@@ -404,9 +439,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0D5B9F255612B2002BB9C7 /* UIViewTests.swift in Sources */,
+				8E0D5B9925560DE7002BB9C7 /* ConfigureTests.swift in Sources */,
 				78FE608C25506E3A00291CC2 /* UILabelTests.swift in Sources */,
+				8E0D5BA325561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift in Sources */,
 				3D9C42FC22746078000A6585 /* LayoutItKitTests.swift in Sources */,
+				8E0D5BA72556E533002BB9C7 /* UIView+CenterConstraintsTests.swift in Sources */,
 				78FE60902551F3FD00291CC2 /* UIStackViewTests.swift in Sources */,
+				8E0D5BAB2558751E002BB9C7 /* UIView+StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

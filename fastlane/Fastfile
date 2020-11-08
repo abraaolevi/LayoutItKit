@@ -69,11 +69,12 @@ platform :ios do
 
   desc "Runs tests"
   lane :tests do
-    # Perform iOS Tests
-    scan(project: "LayoutItKit.xcodeproj", scheme: "LayoutItKit-iOS", device: "iPhone 8", clean: true)
-
-    # Delete SPM build artifacts
-    spm(command: "clean")
+    scan(
+      project: "LayoutItKit.xcodeproj",
+      scheme: "LayoutItKit-iOS",
+      device: "iPhone 8",
+      clean: true
+    )
   end
 
   desc "Run Dependency-Manager compatibility tests"

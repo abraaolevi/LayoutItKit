@@ -16,12 +16,12 @@ extension UIView {
     }
     
     @discardableResult
-    open func size(_ sizeValue: CGSize) -> Self {
-        return size(width: sizeValue.width, height: sizeValue.height)
+    open func withSize(_ size: CGSize) -> Self {
+        return withSize(width: size.width, height: size.height)
     }
     
     @discardableResult
-    open func size(width: CGFloat? = nil, height: CGFloat? = nil) -> Self {
+    open func withSize(width: CGFloat? = nil, height: CGFloat? = nil) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         if let width = width {
             widthAnchor.constraint(equalToConstant: width).isActive = true
@@ -33,14 +33,17 @@ extension UIView {
     }
     
     @discardableResult
-    open func border(width: CGFloat = 8, color: UIColor = .black) -> Self {
+    open func withBorder(width: CGFloat = 4, color: UIColor = .black) -> Self {
         layer.borderWidth = width
         layer.borderColor = color.cgColor
         return self
     }
 
     @discardableResult
-    open func shadow(opacity: Float = 0, radius: CGFloat = 0, offset: CGSize = .zero, color: UIColor = .black) -> Self {
+    open func withShadow(opacity: Float = 0,
+                         radius: CGFloat = 0,
+                         offset: CGSize = .zero,
+                         color: UIColor = .black) -> Self {
         layer.shadowOpacity = opacity
         layer.shadowRadius = radius
         layer.shadowOffset = offset

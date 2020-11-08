@@ -29,6 +29,7 @@
 		8E0D5B9F255612B2002BB9C7 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */; };
 		8E0D5BA325561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */; };
 		8E0D5BA72556E533002BB9C7 /* UIView+CenterConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */; };
+		8E0D5BAB2558751E002BB9C7 /* UIView+StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D5BAA2558751E002BB9C7 /* UIView+StackTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
 		8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnchoredConstraintsTests.swift"; sourceTree = "<group>"; };
 		8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CenterConstraintsTests.swift"; sourceTree = "<group>"; };
+		8E0D5BAA2558751E002BB9C7 /* UIView+StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+StackTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 				8E0D5B9E255612B2002BB9C7 /* UIViewTests.swift */,
 				8E0D5BA225561EA1002BB9C7 /* UIView+AnchoredConstraintsTests.swift */,
 				8E0D5BA62556E533002BB9C7 /* UIView+CenterConstraintsTests.swift */,
+				8E0D5BAA2558751E002BB9C7 /* UIView+StackTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				3D9C42FC22746078000A6585 /* LayoutItKitTests.swift in Sources */,
 				8E0D5BA72556E533002BB9C7 /* UIView+CenterConstraintsTests.swift in Sources */,
 				78FE60902551F3FD00291CC2 /* UIStackViewTests.swift in Sources */,
+				8E0D5BAB2558751E002BB9C7 /* UIView+StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

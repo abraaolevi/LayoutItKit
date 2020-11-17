@@ -10,6 +10,12 @@ import UIKit
 
 extension UIView {
 
+    open func addSubviewAndCenterToSuperview(_ view: UIView) {
+        self.addSubview(view)
+        view.centerXToSuperview()
+        view.centerYToSuperview()
+    }
+
     open func centerInSuperview(size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
 

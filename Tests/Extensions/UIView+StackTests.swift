@@ -30,5 +30,28 @@ class UIView_StackTests: XCTestCase {
         XCTAssertEqual(bottomConstraint.firstItem as? UIView, stackView)
         XCTAssertEqual(trailingConstraint.firstItem as? UIView, stackView)
     }
+    
+    func testScrollableStack() throws {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+        
+        let scrollableStackView = view.scrollableStack(views: [
+            UILabel(text: "Label 1"),
+            UILabel(text: "Label 2"),
+            UILabel(text: "Label 3"),
+            UILabel(text: "Label 4")
+        ])
+        
+        let topConstraint = try XCTUnwrap(view.constraints.filter({ $0.firstAttribute == .top }).first)
+        let leadingConstraint = try XCTUnwrap(view.constraints.filter({ $0.firstAttribute == .leading }).first)
+        let bottomConstraint = try XCTUnwrap(view.constraints.filter({ $0.firstAttribute == .bottom }).first)
+        let trailingConstraint = try XCTUnwrap(view.constraints.filter({ $0.firstAttribute == .trailing }).first)
+
+        let _ = try XCTUnwrap(topConstraint.firstItem as? UIScrollView)
+        let _ = try XCTUnwrap(leadingConstraint.firstItem as? UIScrollView)
+        let _ = try XCTUnwrap(bottomConstraint.firstItem as? UIScrollView)
+        let _ = try XCTUnwrap(trailingConstraint.firstItem as? UIScrollView)
+
+        XCTAssertEqual(scrollableStackView.subviews.count, 4)
+    }
 
 }

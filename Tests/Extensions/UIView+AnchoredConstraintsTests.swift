@@ -10,6 +10,40 @@
 import XCTest
 
 class UIView_AnchoredConstraintsTests: XCTestCase {
+    
+    func testAddSubviewAndFillSuperview() throws {
+        let superview = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+        let view = UIView()
+        
+        superview.addSubviewAndFillSuperview(view)
+        
+        XCTAssertEqual(superview.subviews.first, view)
+        
+        let topAnchor = try XCTUnwrap(superview
+                                        .constraints
+                                        .filter({ $0.firstAttribute == .top })
+                                        .first)
+        
+        let leadingAnchor = try XCTUnwrap(superview
+                                            .constraints
+                                            .filter({ $0.firstAttribute == .leading })
+                                            .first)
+        
+        let bottomAnchor = try XCTUnwrap(superview
+                                            .constraints
+                                            .filter({ $0.firstAttribute == .bottom })
+                                            .first)
+        
+        let trailingAnchor = try XCTUnwrap(superview
+                                            .constraints
+                                            .filter({ $0.firstAttribute == .trailing })
+                                            .first)
+        
+        XCTAssertEqual(topAnchor.firstItem as? UIView, view)
+        XCTAssertEqual(leadingAnchor.firstItem as? UIView, view)
+        XCTAssertEqual(bottomAnchor.firstItem as? UIView, view)
+        XCTAssertEqual(trailingAnchor.firstItem as? UIView, view)
+    }
 
     func testAnchor_withAnhors() throws {
         let view = UIView()

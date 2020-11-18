@@ -42,8 +42,9 @@ extension UIView {
                                          alignment: alignment,
                                          distribution: distribution)
 
+        scrollView.translatesAutoresizingMaskIntoConstraints = false        
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        
         stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 1).isActive = true
         
         return stackView

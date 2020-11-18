@@ -15,26 +15,68 @@ import LayoutItKit
 class ViewController: UIViewController {
     
     // MARK: Properties
-    
-    /// The Label
-    let label = UILabel()
-        .withText("🚀\nLayoutItKit\nExample")
-        .withFont(.systemFont(ofSize: 25, weight: .semibold))
-        .withTextColor(.black)
-        .withTextAlignment(.center)
-        .withNumberOfLines(0)
-    
+
     // MARK: View-Lifecycle
     
     /// View did load
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-    }
-    
-    /// LoadView
-    override func loadView() {
-        self.view = self.label
+        
+        let myCustomView = MyCustomView()
+        self.view.addSubviewAndFill(myCustomView)
+        
+//        // OR
+//
+//        let label = UILabel()
+//            .withText("🚀\nLayoutItKit\nExample")
+//            .withFont(.systemFont(ofSize: 25, weight: .semibold))
+//            .withTextColor(.black)
+//            .withTextAlignment(.center)
+//            .withNumberOfLines(0)
+//
+//        self.view.scrollableStack(views: [
+//            label,
+//            UIView(backgroundColor: .blue).withSize(height: 100),
+//            UIView(backgroundColor: .green).withSize(height: 100),
+//            UIView(backgroundColor: .black).withSize(height: 100),
+//            UIView(backgroundColor: .brown).withSize(height: 100),
+//            UIView(backgroundColor: .purple).withSize(height: 100),
+//            UIView(backgroundColor: .red).withSize(height: 100),
+//            UIView()
+//        ], spacing: 24)
     }
     
 }
+
+class MyCustomView: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        let label = UILabel()
+            .withText("🚀\nLayoutItKit\nExample")
+            .withFont(.systemFont(ofSize: 25, weight: .semibold))
+            .withTextColor(.black)
+            .withTextAlignment(.center)
+            .withNumberOfLines(0)
+
+            scrollableStack(
+                views: [
+                    label,
+                    UIView(backgroundColor: .blue).withSize(height: 100),
+                    UIView(backgroundColor: .green).withSize(height: 100),
+                    UIView(backgroundColor: .black).withSize(height: 100),
+                    UIView(backgroundColor: .brown).withSize(height: 100),
+                    UIView(backgroundColor: .purple).withSize(height: 100),
+                    UIView(backgroundColor: .red).withSize(height: 100)
+                ],
+                spacing: 24
+            )
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+

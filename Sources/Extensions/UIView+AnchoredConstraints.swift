@@ -10,6 +10,11 @@ import UIKit
 
 extension UIView {
     
+    open func addSubviewAndFillSuperview(_ view: UIView) {
+        self.addSubview(view)
+        view.fillSuperview()
+    }
+
     @discardableResult
     open func anchor(_ anchors: LayoutItKit.AutoLayout.Anchor...) -> LayoutItKit.AutoLayout.AnchoredConstraints {
         translatesAutoresizingMaskIntoConstraints = false

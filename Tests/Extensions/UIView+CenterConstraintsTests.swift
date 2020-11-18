@@ -10,6 +10,31 @@
 import XCTest
 
 class UIView_CenterConstraintsTests: XCTestCase {
+    
+    func testAddSubviewAndCenterToSuperview() throws {
+        let superview = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+        let view = UIView()
+        
+        superview.addSubviewAndCenterToSuperview(view)
+        
+        XCTAssertEqual(superview.subviews.first, view)
+        XCTAssertFalse(view.translatesAutoresizingMaskIntoConstraints)
+        
+        let anchoredViewX = try XCTUnwrap(superview
+                                        .constraints
+                                        .filter({ $0.firstAttribute == .centerX })
+                                        .first?
+                                        .firstItem as? UIView)
+
+        let anchoredViewY = try XCTUnwrap(superview
+                                        .constraints
+                                        .filter({ $0.firstAttribute == .centerY })
+                                        .first?
+                                        .firstItem as? UIView)
+        
+        XCTAssertEqual(view, anchoredViewX)
+        XCTAssertEqual(view, anchoredViewY)
+    }
 
     func testCenterInSuperview() throws {
         let size = CGSize(width: 25, height: 50)

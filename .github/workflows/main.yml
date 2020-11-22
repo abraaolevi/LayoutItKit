@@ -17,8 +17,10 @@ jobs:
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v1
-    - name: fastlane ios tests
+    - name: Run test
       run: fastlane ios tests
+    - name: Upload to Codecov
+      run: bash <(curl -s https://codecov.io/bash)
   compatibility:
     name: Compatibility-Tests
     runs-on: macOS-latest

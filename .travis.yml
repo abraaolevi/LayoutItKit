@@ -1,0 +1,25 @@
+branches:
+  only:
+    - master
+    - dev
+    - /^hotfix.*$/
+    - /^feature.*$/
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+
+language: swift
+
+stages:
+  - Tests
+
+jobs:
+  include:
+    - stage: Tests
+      os: osx
+      osx_image: xcode10.2
+      name: Unit Tests
+      script: fastlane ios tests
+      after_success: bash <(curl -s https://codecov.io/bash)

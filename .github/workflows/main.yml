@@ -13,7 +13,7 @@ on:
 
 jobs:
   tests:
-    name: Unit-Tests
+    name: Unit Tests
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v1
@@ -22,7 +22,7 @@ jobs:
     - name: Upload to Codecov
       run: bash <(curl -s https://codecov.io/bash)
   compatibility:
-    name: Compatibility-Tests
+    name: Compatibility Tests
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v1

@@ -27,6 +27,22 @@ extension UIView {
     }
     
     @discardableResult
+    open func stack(_ views: UIView...,
+                    spacing: CGFloat = 0,
+                    alignment: UIStackView.Alignment = .fill,
+                    distribution: UIStackView.Distribution = .fill) -> UIStackView {
+        return stack(.vertical, views: views, spacing: spacing, alignment: alignment, distribution: distribution)
+    }
+    
+    @discardableResult
+    open func hstack(_ views: UIView...,
+                     spacing: CGFloat = 0,
+                     alignment: UIStackView.Alignment = .fill,
+                     distribution: UIStackView.Distribution = .fill) -> UIStackView {
+        return stack(.horizontal, views: views, spacing: spacing, alignment: alignment, distribution: distribution)
+    }
+    
+    @discardableResult
     open func scrollableStack(_ axis: NSLayoutConstraint.Axis = .vertical,
                               views: [UIView],
                               spacing: CGFloat = 0,

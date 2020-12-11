@@ -31,6 +31,22 @@ class UIView_StackTests: XCTestCase {
         XCTAssertEqual(trailingConstraint.firstItem as? UIView, stackView)
     }
     
+    func testVStack() throws {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+        
+        let stackView = view.vstack()
+        
+        XCTAssertEqual(stackView.axis, .vertical)
+    }
+    
+    func testHStack() throws {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+        
+        let stackView = view.hstack()
+        
+        XCTAssertEqual(stackView.axis, .horizontal)
+    }
+    
     func testScrollableStack() throws {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
         

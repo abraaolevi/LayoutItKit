@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .white
         
         let myCustomView = MyCustomView()
-        self.view.addSubviewAndFill(myCustomView)
+        self.view.addSubviewAndFillSuperview(myCustomView)
         
 //        // OR
 //

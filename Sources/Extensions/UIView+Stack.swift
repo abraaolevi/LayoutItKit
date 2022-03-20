@@ -65,5 +65,19 @@ extension UIView {
         
         return stackView
     }
+    
+    @discardableResult
+    open func spacer() -> UIView {
+        UIView()
+    }
 
+    @discardableResult
+    open func vspacer(_ size: CGFloat) -> UIView {
+        UIView().withSize(height: size)
+    }
+    
+    @discardableResult
+    open func hspacer(_ size: CGFloat) -> UIView {
+        UIView().withSize(width: size)
+    }
 }

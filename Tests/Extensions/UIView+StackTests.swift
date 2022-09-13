@@ -69,5 +69,35 @@ class UIView_StackTests: XCTestCase {
 
         XCTAssertEqual(scrollableStackView.subviews.count, 4)
     }
+    
+    func testSpacer() {
+        let view = UIView()
+        
+        let spacer = view.spacer()
+        
+        XCTAssertEqual(spacer.subviews.count, 0)
+    }
+    
+    func testVSapcer() throws {
+        let spacerSize: CGFloat = 10
+        let view = UIView()
+        
+        let spacer = view.vspacer(spacerSize)
+        
+        let widthConstraint = try XCTUnwrap(spacer.constraints.filter({ $0.firstAttribute == .height }).first)
+        
+         XCTAssertEqual(widthConstraint.constant, spacerSize)
+    }
 
+    func testHSapcer() throws {
+        let spacerSize: CGFloat = 10
+        let view = UIView()
+        
+        let spacer = view.hspacer(spacerSize)
+        
+        let widthConstraint = try XCTUnwrap(spacer.constraints.filter({ $0.firstAttribute == .width }).first)
+        
+         XCTAssertEqual(widthConstraint.constant, spacerSize)
+    }
+    
 }

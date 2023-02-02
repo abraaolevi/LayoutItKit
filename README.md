@@ -22,7 +22,7 @@
 
 # LayoutItKit
 
-LayoutItKit is a set of UIKit extensions to facilitate layout creation using ViewCode and UIKit.
+LayoutItKit is a set of UIKit extensions to facilitate layout creation using ViewCode and UIKit in a simple, fun and easy to understand way. 🎉
 
 ## Features
 
@@ -31,7 +31,7 @@ LayoutItKit is a set of UIKit extensions to facilitate layout creation using Vie
 - [x] Custom initializers for the most common `UIView`, `UILabel`, and `UIStackView`.
 - [x] Possibilite to create simple scrollable layout using only `UIStackView` without `UITableView`.
 
-## Example
+## Example App
 
 The example application is the best way to see `LayoutItKit` in action. Simply open the `LayoutItKit.xcodeproj` and run the `Example` scheme.
 
@@ -76,14 +76,9 @@ Alternatively navigate to your Xcode project, select `Swift Packages` and click 
 
 If you prefer not to use any of the aforementioned dependency managers, you can integrate LayoutItKit into your project manually. Simply drag the `Sources` Folder into your Xcode project.
 
-## Usage
+## How to use
 
-It is easy to use:
-
-
-<table>
-<tr>
-<td>
+It's easy to use, the following code demonstrates how to create an element listing very quickly and without much effort:
 
 ```swift
 import LayoutItKit
@@ -116,16 +111,15 @@ class InlineViewController: UIViewController {
 }
 ```
 
-</td>
-<td>
+See the result of the code above:
+
+<p align="center">
 <img 
 src="https://user-images.githubusercontent.com/502058/190005106-89346846-d889-4dc8-83c3-f256d09211a5.gif" 
 alt="Exemple of layout built with LayoutItKit"
 title="Exemple of layout built with LayoutItKit"
 width="296" />
-</td>
-</tr>
-</table>
+</p>
 
 Also, you can create your own component pieces:
 
@@ -247,11 +241,13 @@ class CreditCardViewController: UIViewController {
 }
 ```
 
+<p align="center">
 <img 
 src="https://user-images.githubusercontent.com/502058/190005097-0ec0c64e-9a9c-4ea0-a3f1-7227dbf05372.png" 
 alt="Exemple of use of custom UIView layout built with LayoutItKit"
 title="Exemple of use of custom UIView layout built with LayoutItKit"
 width="296" />
+</p>
 
 ## Contributing
 Contributions are very welcome 🙌
